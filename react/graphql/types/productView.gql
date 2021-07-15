@@ -1,0 +1,18 @@
+query {
+  product(identifier: { field: id, value: "2"}) {
+    categoryId
+    productName
+    items {
+      name
+      itemId
+      sellers {
+        commertialOffer {
+          Price
+          ListPrice
+          spotPrice
+        }
+      }
+    }
+    
+  }
+}
